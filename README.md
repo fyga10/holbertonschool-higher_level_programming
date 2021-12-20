@@ -1,1 +1,1 @@
-here are my first steps in python
+here are my first repository about python
