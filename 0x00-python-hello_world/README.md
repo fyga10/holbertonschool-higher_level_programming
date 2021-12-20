@@ -1,0 +1,1 @@
+this is my firts directory about python
