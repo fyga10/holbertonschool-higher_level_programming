@@ -4,4 +4,4 @@ length = len(argv)
 add = 0
 for i in range(1, length):
     add += int(argv[i])
-print(add)
+print("{}".format(add))
