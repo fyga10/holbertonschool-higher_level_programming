@@ -11,3 +11,4 @@ def print_matrix_integer(matrix=[[]]):
                     print("{:d}".format(column), end=" ")
     if len(matrix[0]) == 0:
         print("")
+        
