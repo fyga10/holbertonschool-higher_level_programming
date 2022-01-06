@@ -12,3 +12,5 @@ def roman_to_int(roman_string):
             else:
                 result += dic[rom[i]]
         return result
+    else:
+        return (0)
