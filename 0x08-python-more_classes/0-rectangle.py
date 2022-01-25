@@ -3,7 +3,5 @@
 
 
 class Rectangle:
-
     '''Represents an empty square.'''
-
     pass
