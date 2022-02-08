@@ -6,7 +6,7 @@ from models.rectangle import Rectangle
 
 class Square(Rectangle):
     """Model of a Square
-       Args:
+        Args:
             size (int):     The width of the Square object
             x (int) (opt):  X position of the Rectangle object (0 by default)
             y (int) (opt):  Y position of the rectangle object (0 by default)
@@ -26,7 +26,7 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
-        
+
         """Setter for square's size attribute"""
 
         self.width = value
@@ -60,7 +60,6 @@ class Square(Rectangle):
     def to_dictionary(self):
 
         """Returns the dictionary representation of the object's state"""
-        
         obj_dict = self.__dict__.copy()
         for ele in obj_dict.keys():
             if "_Rectangle__" in ele:
