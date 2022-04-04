@@ -1,7 +1,7 @@
 #!/usr/bin/node
 let n = 0;
 if (isNaN(process.argv[2]) === false) {
-  let num = process.argv[2];
+  const num = process.argv[2];
   while (n < num) {
     console.log('C is fun');
     n++;
