@@ -7,7 +7,7 @@ import MySQLdb
 import sys
 
 if __name__ == '__main__':
-
+    # Default host is "localhost"
     username = argv[1]
     password = argv[2]
     d_name = argv[3]
@@ -16,10 +16,11 @@ if __name__ == '__main__':
                            user=username, passwd=password, db=d_name,
                            charset="utf8")
 
-cu = conn.cursor()
-cu.execute("SELECT * FROM states ORDER BY id ASC")
-rows = cu.fetchall()
+    cu = conn.cursor()
+    cu.execute("SELECT * FROM states ORDER BY id ASC")
+    rows = cu.fetchall()
+    # Print results
     for eachRow in rows:
         print(eachRow)
-cu.close()
-conn.close()
+    cu.close()
+    conn.close()
